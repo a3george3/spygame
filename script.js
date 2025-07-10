@@ -20,10 +20,10 @@ document.getElementById("startGame").addEventListener("click", () => {
     return;
   }
 
-  // Choose a random job from the list
+  // Choose a random location from the list
   selectedJob = jobsList[Math.floor(Math.random() * jobsList.length)];
 
-  // Prepare roles: one SPY, rest get the job
+  // Prepare roles: one SPY, rest get the location
   roles = Array(playerCount - 1).fill(selectedJob);
   roles.push("SPY");
 

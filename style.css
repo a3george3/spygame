@@ -127,3 +127,37 @@ button:active {
     padding: 12px 0;
   }
 }
+
+#instructionsScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+
+#instructionsScreen h2 {
+  color: #a020f0;
+  margin-bottom: 20px;
+}
+
+#instructionsScreen p {
+  max-width: 500px;
+  text-align: left;
+  font-size: 1.1em;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+#instructionsScreen button {
+  margin-top: 30px;
+}

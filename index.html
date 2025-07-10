@@ -10,18 +10,36 @@
     <div id="main">
       <h1>Spy Game</h1>
 
+      <!-- SETUP SCREEN -->
       <div id="setup">
         <label for="playerCount">Number of players:</label>
         <input type="number" id="playerCount" min="3" max="10" value="4" />
         <button id="startGame">Start New Game</button>
+
+        <div id="staticInstructions">
+          <h2>Instructiuni Joc</h2>
+          <p>
+            1️⃣ Fiecare jucător apasă pe "Show your card" și vede rolul său.<br />
+            2️⃣ Unul singur este SPY și nu știe locația comună.<br />
+            3️⃣ Restul primesc aceeași locație (ex: restaurant, avion,
+            spital).<br />
+            4️⃣ Jucătorii pun întrebări și răspund fără să spună direct locația,
+            ca să se recunoască între ei.<br />
+            5️⃣ SPY ascultă și încearcă să ghicească locația.<br />
+            6️⃣ La final, SPY încearcă să ghicească sau ceilalți îl votează.<br /><br />
+            🎯 Distracție plăcută!
+          </p>
+        </div>
       </div>
 
+      <!-- REVEAL PROMPT SCREEN -->
       <div id="screenRevealPrompt" class="hidden">
         <h2 id="playerIndicator"></h2>
         <p>Pass the device. When ready:</p>
         <button id="revealButton">Show your card</button>
       </div>
 
+      <!-- CARD SCREEN -->
       <div id="screenCard" class="hidden">
         <div id="card">
           <p id="roleText"></p>
@@ -29,6 +47,7 @@
         <button id="nextButton">Next</button>
       </div>
 
+      <!-- END SCREEN -->
       <div id="endScreen" class="hidden">
         <h2>All cards have been shown!</h2>
         <button id="restartButton">Play Again</button>
