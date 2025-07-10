@@ -1,0 +1,129 @@
+/* General body */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container */
+#main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  background: #111;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Headers */
+h1,
+h2 {
+  color: #a020f0;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+/* Labels and Inputs */
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #ddd;
+  text-align: center;
+}
+
+input[type="number"] {
+  display: block;
+  margin: 0 auto;
+  padding: 12px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  border: 1px solid #a020f0;
+  background-color: #222;
+  color: #fff;
+  width: 100px;
+  text-align: center;
+}
+
+/* Buttons */
+button {
+  display: block;
+  width: 90%;
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 14px 0;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #a020f0, #800080);
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.3s, transform 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Card container */
+#card {
+  margin: 30px auto;
+  padding: 40px 20px;
+  border: 2px solid #a020f0;
+  border-radius: 12px;
+  background-color: #222;
+  font-size: 2em;
+  text-align: center;
+  max-width: 90%;
+  box-shadow: 0 0 15px rgba(160, 32, 240, 0.5);
+}
+
+/* Hide/show helpers */
+.hidden {
+  display: none;
+}
+
+/* Reveal screen text */
+#screenRevealPrompt p {
+  margin: 20px 0;
+  font-size: 1.1em;
+  color: #ccc;
+  text-align: center;
+}
+
+/* End screen */
+#endScreen h2 {
+  margin-bottom: 20px;
+  color: #a020f0;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  h1,
+  h2 {
+    font-size: 1.5em;
+  }
+
+  #card {
+    font-size: 1.5em;
+    padding: 30px 15px;
+  }
+
+  button {
+    font-size: 1em;
+    padding: 12px 0;
+  }
+}
